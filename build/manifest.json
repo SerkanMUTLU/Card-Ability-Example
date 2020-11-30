@@ -1,0 +1,51 @@
+{
+  "package": "com.cardabilityforbank",
+  "name": "cardabilityforBank",
+  "versionName": "1.0.4",
+  "versionCode": 4,
+  "icon": "/news_and_information_type/common/ic_logo-playstore.png",
+  "minPlatformVersion": 1060,
+  "features": [
+    {
+      "name": "system.prompt"
+    },
+    {
+      "name": "system.router"
+    },
+    {
+      "name": "system.fetch"
+    },
+    {
+      "name": "system.package"
+    }
+  ],
+  "permissions": [
+    {
+      "origin": "*"
+    }
+  ],
+  "config": {},
+  "router": {
+    "entry": "news_and_information_type",
+    "pages": {
+      "news_and_information_type": {
+        "component": "news_and_information_type",
+        "path": "/news_and_information_type"
+      }
+    }
+  },
+  "widgets": [
+    {
+      "name": "news_and_information_type",
+      "id": "newsAndInformationType",
+      "path": "/news_and_information_type",
+      "component": "news_and_information_type",
+      "minPlatformVersion": 1060,
+      "targetManufactorys": [
+        "huawei"
+      ],
+      "params": [],
+      "uses-permission": []
+    }
+  ]
+}

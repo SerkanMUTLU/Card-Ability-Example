@@ -1,0 +1,39 @@
+<template>
+    <div class="cardtitle_box">
+        <image class="cardtitle_title_img" src='{{logoUrl}}'></image>
+        <text class="cardtitle_title">{{title}}</text>
+    </div>
+</template>
+<style lang="sass">
+    @import "../../css/basic.scss";
+
+    .cardtitle_box{
+        height: dpConvert(40);
+    }
+
+    .cardtitle_title_img{
+        margin: dpConvert(16) dpConvert($elementsMarginHorizontalM) dpConvert($elementsMarginVerticalL) dpConvert(0);
+        @include iconCard;
+    }
+
+    .cardtitle_title{
+        lines: 1;
+        text-overflow: ellipsis;
+        color: $textColorPrimary;
+        @include textSizeCardTitle;
+        margin: dpConvert(16) dpConvert(48) dpConvert($elementsMarginVerticalL) dpConvert(0); 
+    }
+
+</style>
+
+<script>
+    module.exports = {
+        props: [
+            'title','logoUrl'
+        ],
+        data: {
+            title: 'TITLE',
+            logoUrl: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMGSURBVHhe7Zm/axRBFMff7mVPEwMWEoKCooVgIaicoIkBCztrwfwHdooglt7FUgKiXf6DCNZ2dpoo5FDBQrAQFJQQLIToxdyP9b3dl7txMxuzM7O7Z2Y+MHl3k9nsfL/zY+dtPFhYCcFifI7W4gzgaC3OAI7W4gzgaC3OAI7W4gzgaC3lGRBiCvK7Exf6XBLFG0BiN1A0lvnLx6Oy9b0MI4rLBqMR70axfukYNM4f4V/ENFa+wtzLz9gjD2BfJY4FkL8BgvB7KHwuITxJHY24X6AR+RkgjvgMjnhtZ+FJGk2cES/yN8K8AZrCk+RthDkDROGSNa5LXnuEvgE5C09i2gh1A/rCceOaOao91bMSL40vpEDLCDUDWHx9GoXnPOL/IpoRS2iEognZDSDxvzoQ3r7IFcOB9/AVwNhIZhNcLsDRWtSWwEYX1m7UcBvoRV/LJH4Y+DCx0ATYn30fUN8EW+VmcX9Bokezr39C/TG4RzCzB+BS6Ke0YkmbIZt4fki2pToZ0ZJLtKVC9zSA/gzAjtQmx+Hu2UlYbw86dbBagWvPPgKMoMfi1EShd/DscObQKGz24ltXfQ/efW/BPD7TAa/rQ+I7PXh69ST8EAwaD3x48HYVmqvrALj+ddA3oN2F66cmYPHKCa4Y4D1+vf2A0mrD0uxpmELTRJZRzPTie1zLAdcgZAAeuMKbF7hiwOzzT/DkwxpAIBimgJEl0OGR3C0tyfSV1e1E1numYf05wBnA0VqcARytxRnA0VqcARwLRZazZc/jzGDEgGolpfsp1WOUHySQ1UWk/I3Ue2ZEPxeg83oXiyyboxydFIh9pfbUlq4RIUGUCIl5Q9QEf9C7hyTUlq5ReAcgYuZ9AImSQh3kjyJp7WVitkyQoSmeUDOABAip71CAKbKKIdkNIPGYo986dxg9CNPGpjBIcuB78OjNt+3vHnaBmgHu/wJ7B2cAR2ux3gD1x+DPdhyHAdr4DgSZN0DCzEHoP8btARytxRnA0VqcARytxRnA0VqcARytxXIDAP4AUsZc4MS2z/wAAAAASUVORK5CYII=' 
+        },
+    }
+</script>
