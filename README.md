@@ -1,5 +1,6 @@
+
 <div>
-  <h3>Huawei Card Ability Example</h3>
+  <h3>Card Ability Example </h3>
   <p>Before use card Ability, you need to install:</p>
     <ul>
       <li>Huawei QuickApp ide</li>
